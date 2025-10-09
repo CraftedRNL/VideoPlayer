@@ -13,49 +13,55 @@ body {
     flex-flow: wrap;
     justify-content: center;
     align-content: center;
-    height: 100%;
+    height: 100vh;
     padding: 0px;
     margin: 0px;
 }
 .main {
-    height: 80%;
-    width: 95%; 
+    /* align-content: center; */
+    height: 95%;
+    width: 95%;  
     border: 1px solid black;
     border-radius: 20px;
     background-color: white;
+    justify-content: space-around;
 }
-.col-12 {
+.col-lg-12 {
     
-    margin-top: 10px;
-    padding-top: 1%;
-    padding-left: 15%;
-    padding-right: 15%;
-    height: 90%;
-    width: 100%;
-    align-items: center;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* height: 80%; */
+    max-width: 100%;
+    /* align-items: center; */
+    position:relative;
 }
-/* .col-3{
-    margin-top: 10px;
-    padding-top: 1%;
-    padding-left: 15%;
-    padding-right: 15%;
-    height: 90%;
-    width: 100%;
-    align-items: center;
-} */
+.col-lg-3{
+    background-color: rgb(105, 105, 105);
+    height: 15%;
+    /* margin: 10px; */
+    padding: 0px;
+}
 .video1{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-self: center;
     border-radius: 20px;
-    width: 100%;
-    height: 75%;
-    background-color: rgb(105, 105, 105);
+    /* max-width: 100%; */
+    height: 95%;
+    /* background-color: rgb(105, 105, 105); */
 }
 img{
-    width: 25%;
+    /* position: relative; */
+    max-width: 30%;
+    max-height: min-content;
+    display: inline-block;
 }
-.sub{
-    height: 20%;
-    background-color: rgb(105, 105, 105);
+.video2{
+    display: flex;
+    border-radius: 20px;
+    min-width: 20%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
 }
