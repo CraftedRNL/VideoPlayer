@@ -2,66 +2,86 @@ html,
 body {
     margin: 0;
     height: 100%;
-    align-items: center;
+
     overflow: hidden;
-    background-color: rgb(222, 250, 255);
-    overflow: hidden;
+    background-color: rgb(170, 170, 170);
 }
 
 .container-fluid {
     display: flex;
-    flex-flow: wrap;
     justify-content: center;
-    align-content: center;
+     align-items: center;
     height: 100vh;
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
+    
 }
 .main {
-    /* align-content: center; */
-    height: 95%;
-    width: 95%;  
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: white;
-    justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: beige;
+  overflow: hidden;
 }
 .col-lg-12 {
-    
+    position: relative;
     padding-top: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
-    /* height: 80%; */
-    max-width: 100%;
-    /* align-items: center; */
-    position:relative;
+    padding-bottom: 10px;
+    height: 100%;
+    
 }
-.col-lg-3{
-    background-color: rgb(105, 105, 105);
-    height: 15%;
-    /* margin: 10px; */
-    padding: 0px;
+video{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
-.video1{
+
+
+.folder{
     display: flex;
-    align-items: center;
-    justify-self: center;
-    border-radius: 20px;
-    /* max-width: 100%; */
-    height: 95%;
-    /* background-color: rgb(105, 105, 105); */
+    height: 30%;
+    position: absolute;
+    z-index: 10;
+    transition: transform 0.4s ease;
+    cursor: pointer;
 }
-img{
-    /* position: relative; */
-    max-width: 30%;
-    max-height: min-content;
-    display: inline-block;
+.folder:hover{
+    transform: translate(0);
+    transform: rotate(10deg);
 }
-.video2{
-    display: flex;
-    border-radius: 20px;
-    min-width: 20%;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
+.f1{
+top: 10%;
+    left: 0px;
+    transform: translate(-85%);
+    
+}
+.f2{
+    
+    bottom: 10%;
+    left: 0px;
+    transform: translate(-85%);
+}
+.f2:hover{
+    transform: rotate(-10deg);
+}
+.f3{
+    top: 10%;
+    right: 0px;
+    transform: translate(85%);
+}
+.f3:hover{
+    transform: rotate(-10deg);
+}
+.f4{
+    bottom: 10%;
+    right: 0px;
+    transform: translate(85%);
+}
+.flip{
+transform: scaleX(-1);
 }
