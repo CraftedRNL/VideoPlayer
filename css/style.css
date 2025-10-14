@@ -4,7 +4,7 @@ body {
     height: 100%;
 
     overflow: hidden;
-    background-color: #D9D3C6;
+    background-color: #242424;
 }
 
 .container-fluid {
@@ -24,7 +24,7 @@ body {
   height: 90%;
   border: 1px solid black;
   border-radius: 20px;
-  background-color: beige;
+  background-color: rgb(112, 112, 112);
   overflow: hidden;
 }
 .col-lg-12 {
@@ -103,7 +103,19 @@ transform: scaleX(-1);
     transform: rotate(-10deg);
 }
 
-
+.notes{
+  top: 1%;
+    left: 0px;
+  display: flex;
+    height: 10%;
+    position: absolute;
+    z-index: 10;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+.note-img{
+  width: 10 0%;
+}
 @-webkit-keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
