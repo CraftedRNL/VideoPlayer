@@ -184,3 +184,9 @@ transform: scaleX(-1);
     opacity: 1;
   }
 }
+textarea{
+  resize: vertical;
+  overflow: auto;
+  width: 100%;
+  overflow-wrap: break-word;
+}

@@ -18,7 +18,7 @@ document.getElementById('notes').addEventListener('click', function(){
     window.open("https://anotepad.com/", 'Notes','width=600,height=400');
 })
 function check(){
-    for(let i = 0; i < arr.length; i++){
+    for(let i = 0; i < arr2.length; i++){
         if(latest === i){
             console.log('skip')
             arr[i].play();
