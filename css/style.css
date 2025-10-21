@@ -25,7 +25,7 @@ body {
   border-radius: 20px;
   background-color: rgb(112, 112, 112);
   overflow: hidden;
-      z-index: 10;
+  z-index: 10;
 }
 .col-lg-12 {
     position: relative;
@@ -224,4 +224,20 @@ svg{
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0px !important;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 9999;
+}
+
+.full:hover .tooltiptext {
+  visibility: visible;
 }
