@@ -12,7 +12,7 @@ let vid5click = false;
 
 let arr = [vid1, vid2, vid3, vid4, vid5]
 let arr2 = [vid1click, vid2click, vid3click, vid4click, vid5click]
-
+let videos = ["./img/horror.mp4","./img/bowl.mp4","./img/cat.mp4","./img/subaru.mp4","./img/rocket.mp4"]
 let latest = 0;
 document.getElementById('notes').addEventListener('click', function(){
     window.open("https://anotepad.com/", 'Notes','width=600,height=400');
@@ -69,3 +69,19 @@ document.getElementById('click4').addEventListener('click',function(){
     check()
 })
 
+document.getElementById('full1').addEventListener('click',function(){
+    vid1.src = videos[0]
+    vid2.src = videos[1]
+})
+document.getElementById('full2').addEventListener('click',function(){
+    vid1.src = videos[0]
+    vid3.src = videos[2]
+})
+document.getElementById('full3').addEventListener('click',function(){
+    vid1.src = videos[0]
+    vid4.src = videos[3]
+})
+document.getElementById('full4').addEventListener('click',function(){
+    vid1.src = videos[0]
+    vid5.src = videos[4]
+})
