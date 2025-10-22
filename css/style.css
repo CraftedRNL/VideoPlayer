@@ -219,7 +219,7 @@ svg{
 }
 
 .full{
-  background-image: url("/img/fullscreen.png");
+  background-image: url("../img/fullscreen.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
